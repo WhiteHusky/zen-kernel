@@ -784,7 +784,7 @@ int amdgpu_gfx_enable_kgq(struct amdgpu_device *adev, int xcc_id)
 
 void amdgpu_gfx_off_ctrl(struct amdgpu_device *adev, bool enable)
 {
-	unsigned long delay = GFX_OFF_DELAY_ENABLE;
+	unsigned long delay = GFX_OFF_NO_DELAY;
 
 	if (!(adev->pm.pp_feature & PP_GFXOFF_MASK))
 		return;
